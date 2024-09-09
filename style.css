@@ -1,0 +1,64 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #cbcfd3;
+}
+h1{
+    text-align: center;
+    color: #0909aaf2;
+
+}
+form{
+    max-width: 600px;
+    margin:auto;
+    background-color:#a6b6c7 ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 20px;
+}
+fieldset{
+    border: 2px solid #08084ef2;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color:#6b94bf;
+}
+legend{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #0909aaf2;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    color: #0909aaf2;
+    font-weight: bold;
+    /* font-size: 14px; */
+}
+input,textarea{
+    width: calc(100% - 1px);
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #0909aaf2;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button{
+    display:block;
+    margin:auto;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2b2bf8f2 ;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+button:hover{
+    background-color: #0bd50b;
+    color: #0909aaf2;
+}

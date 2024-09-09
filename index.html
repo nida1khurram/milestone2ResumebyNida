@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Milestone 2 Publish on Githuband Host on Vercel Static Resume Builder by Nida Khurram</h1>
+    <form action="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required><br/>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br/>
+
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" name="phone" required>
+        </fieldset>
+        <!-- education -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea name="education" id="education" rows="4" required></textarea><br/>
+        </fieldset>
+         <!-- experience -->
+         <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea name="experience" id="experience" rows="4" required></textarea><br/>
+        </fieldset>
+         <!-- skill -->
+         <fieldset>
+            <legend>Skills</legend>
+            <label for="skill">Skills</label>
+            <textarea name="skills" id="skill" rows="4" required></textarea><br/>
+         </fieldset>
+         <button type="submit">Generate Resume</button>
+    </form>
+</body>
+</html>
