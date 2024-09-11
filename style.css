@@ -62,3 +62,15 @@ button:hover{
     background-color: #0bd50b;
     color: #0909aaf2;
 }
+
+/* picture */
+.profilePicture{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #2b2bf8f2;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 500%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
