@@ -1,76 +1,199 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
-    margin: 20px;
-    padding: 0;
-    background-color: #cbcfd3;
-}
-h1{
-    text-align: center;
-    color: #0909aaf2;
+/* style.css */
 
-}
-form{
-    max-width: 600px;
-    margin:auto;
-    background-color:#a6b6c7 ;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    padding: 20px;
-}
-fieldset{
-    border: 2px solid #08084ef2;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 10px;
-    background-color:#6b94bf;
-}
-legend{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: #0909aaf2;
-}
-label{
-    display: block;
-    margin-top: 10px;
-    color: #0909aaf2;
-    font-weight: bold;
-    /* font-size: 14px; */
-}
-input,textarea{
-    width: calc(100% - 1px);
-    padding: 8px;
-    margin-top: 4px;
-    border: 1px solid #0909aaf2;
-    border-radius: 4px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-button{
-    display:block;
-    margin:auto;
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #2b2bf8f2 ;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
-}
-button:hover{
-    background-color: #0bd50b;
-    color: #0909aaf2;
+
+body {
+    background-image:url(baloon.png);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* picture */
-.profilePicture{
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #2b2bf8f2;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    border-radius: 500%;
-    width: 100px;
-    height: 100px;
+/* style.css */
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
+    margin-top: 10px;
+    border: 6px solid rgb(20, 152, 182);
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.5);
 }
+.profile-pic:hover{
+    transform: scale(110%);
+}
+
+
+.resume-builder {
+    padding: 27px 100px;
+    
+}
+
+.container {
+    padding: 10px 30px;
+    background: rgb(243, 219, 246);
+    border-radius: 10px;
+    height: auto;
+    width: 60%;
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
+    background-color: rgb(244, 193, 251);
+    padding: 10px;
+    color: rgb(216, 13, 243);
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    margin: 10px 0;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    display: block;
+    width: 100%;
+    color:rgb(216, 13, 243); ;
+}
+
+button {
+    border: none;
+    background-color: rgb(57, 57, 245);
+    padding: 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    font-size: medium;
+    background-color: rgb(38, 38, 252);
+}
+
+.output-container {
+    display: none;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.output {
+    background-color: rgb(181, 232, 244);
+    border: 2px solid rgb(145, 230, 250);
+    margin-bottom: 10px;
+}
+
+.heading {
+    padding: 20px 10px;
+    text-align: center;
+    color: rgb(20, 152, 182);
+    background-color: rgb(41, 213, 251);
+    text-transform: uppercase;
+}
+
+.heading h4 {
+    color: rgb(20, 130, 155);
+    padding-top: 9px;
+}
+
+.info {
+    display: flex;
+    padding: 20px;
+}
+
+.left {
+    width: 50%;
+    border-right: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.right {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box {
+    margin: 10px 0;
+    padding: 5px 10px;
+    height: auto;
+    overflow-wrap: break-word;
+}
+
+.box h2,
+.box p {
+    margin-bottom: 5px;
+    
+}
+
+.tip {
+    font-size: small;
+    color: gray;
+    text-align: center;
+}
+
+.credit {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 3px;
+    color: rgb(80, 80, 80);
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: rgb(247, 28, 12);
+    font-weight: bold;
+}
+
+/* media queries begin */
+@media screen and (max-width: 920px) {
+    .container {
+        width: 100%;
+    }
+
+    .output-container {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resume-builder {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 160%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .left {
+        border-right: none;
+        width: 100%;
+    }
+
+    .right {
+        padding-left: 0;
+        width: 100%;
+    }
+}
+
+/* media queries end here */

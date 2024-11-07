@@ -1,49 +1,59 @@
+<!-- index.html  -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Builder</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Creator</title>
+     <!-- font icon cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style link here -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Milestone 2 Publish on Githuband Host on Vercel Static Resume Builder by Nida Khurram</h1>
-    <form action="resumeForm">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required><br/>
+    <!-- input container starts here -->
+    <section class="resume-builder">
+        <div class="container">
+            <h1>Milestone 2 Static Resume Builder</h1>
+            <div class="resume_container">
+                <form class="inputField">
+                    <input type="text" name="name" placeholder="Your Name" title="Enter Your Name" />
+                    <input type="text" name="title" placeholder="Title/Sub Heading" title="Enter Title/Sub Heading" />
+                    <textarea name="work_experience" placeholder="Work Experience" cols="40" rows="3" title="Enter Your Work Experience"></textarea>
+                    <textarea name="academic_details" placeholder="Academic Details" cols="40" rows="3" title="Enter Your Academic Details"></textarea>
+                    <input type="text" placeholder="Objective" title="Enter Your Objective" name="objective" />
+                    <textarea name="skills" title="Enter Your Skills" placeholder="Skills" cols="40" rows="3"></textarea>
+                    <textarea name="projects" title="Enter Your Projects" placeholder="Projects" cols="40" rows="3"></textarea>
+                    <textarea name="achievements" placeholder="Achievements" cols="40" rows="3" title="Enter Your Achievements"></textarea>
+                    <textarea name="contact" placeholder="Contact Information" cols="40" rows="3" title="Enter Your Contact Information"></textarea>
+                    <label for="profilePicture">Profile Picture</label>
+                    <input type="file" id="profilePicture" name="image" accept="image/*" required />
+                </form>
+            </div>
+            <p class="credit">
+                Created by
+                <a href="https://portfolio-knai.vercel.app/" target="_blank">Nida Khurram</a>
+            </p>
+            <p class="tip">
+                <a href="#" class="footer-icon-a"><i class="fa-brands fa-linkedin-in"></i></a><br />
+                <a href="#" class="footer-icon-a"><i class="fa-regular fa-envelope"></i>  nidakhurramedu@gmail.com</a>
+            </p>
+        </div>
+    </section>
+    <!-- input container ends here -->
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required><br/>
+    <!-- output container starts here -->
+    <div class="output_container"></div>
+    <!-- output container ends here -->
 
-            <label for="phone">Phone</label>
-            <input type="number" id="phone" name="phone" required>
+    <!-- preview button -->
+    <button onclick="hide()">Generate / Edit</button>
 
-<!-- add profile pic -->
-            <label for="profilePicture">Profile Picture</label>
-            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
-
-        </fieldset>
-        <!-- education -->
-        <fieldset>
-            <legend>Education</legend>
-            <label for="education">Education</label>
-            <textarea name="education" id="education" rows="4" required></textarea><br/>
-        </fieldset>
-         <!-- experience -->
-         <fieldset>
-            <legend>Experience</legend>
-            <label for="experience">Experience</label>
-            <textarea name="experience" id="experience" rows="4" required></textarea><br/>
-        </fieldset>
-         <!-- skill -->
-         <fieldset>
-            <legend>Skills</legend>
-            <label for="skill">Skills</label>
-            <textarea name="skills" id="skill" rows="4" required></textarea><br/>
-         </fieldset>
-         <button type="submit">Generate Resume</button>
-    </form>
+    <!-- script link here -->
+    <script src="app.js"></script>
 </body>
+
 </html>
