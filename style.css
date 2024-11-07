@@ -19,7 +19,7 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-top: 10px;
+    margin: 20px 10px;
     border: 6px solid rgb(20, 152, 182);
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.5);
 }
@@ -48,6 +48,7 @@ body {
     padding: 10px;
     color: rgb(216, 13, 243);
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 input,
@@ -95,14 +96,18 @@ button:hover {
 .heading {
     padding: 20px 10px;
     text-align: center;
-    color: rgb(20, 152, 182);
+    color: blue;
     background-color: rgb(41, 213, 251);
     text-transform: uppercase;
+ 
+    
 }
 
 .heading h4 {
-    color: rgb(20, 130, 155);
+    color: blue;
     padding-top: 9px;
+   margin-top: 5px;
+    
 }
 
 .info {
@@ -131,13 +136,17 @@ button:hover {
     padding: 5px 10px;
     height: auto;
     overflow-wrap: break-word;
-}
-
-.box h2,
-.box p {
-    margin-bottom: 5px;
     
 }
+
+.box h2{
+    margin-bottom: 5px;
+    color:blue;
+    text-decoration: underline;
+}
+.box p {
+    margin-bottom: 5px;
+   }
 
 .tip {
     font-size: small;
@@ -157,7 +166,7 @@ a {
 }
 
 a:hover {
-    color: rgb(247, 28, 12);
+    color: blue;
     font-weight: bold;
 }
 
